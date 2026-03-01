@@ -14,20 +14,20 @@
     --radius: 6px;
 
     /* Colors */
-    --color-bg: #f4f4f4;
-    --color-primary: #0c3e74;
-    --color-secondary: #45949c;
-    --color-text: #333;
-    --color-muted: gray;
-    --color-surface: #ffffff;
+    --color-bg: #f7f4d5;
+    --color-primary: #105666;
+    --color-secondary: #839958; 
+    --color-text: #0a3323; 
+    --color-muted: #6f7f6a;
+    --color-surface: #d3968c; 
 }
 body.dark {
-    --color-bg: #0f172a;          /* deep blue-gray */
-    --color-primary: #1e293b;
-    --color-secondary: #38bdf8;   /* accent */
-    --color-text: #e5e7eb;        /* light text */
-    --color-muted: #94a3b8;
-    --color-surface: #020617;
+    --color-bg: #0a3323;
+    --color-primary: #0a3741;
+    --color-secondary: #d3968c;
+    --color-text: #f7f4d5; 
+    --color-muted:  #9aa59a;
+    --color-surface: #384126;
 }
 
 
@@ -342,10 +342,19 @@ figcaption {
 }
 
 /* Image floated inside content */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
 .corner-image {
-    float: right;
-    width: 200px;
-    margin: 0 0 var(--space-2) var(--space-2);
+    width: 300px;
+    flex-shrink: 0;
 }
 
 
